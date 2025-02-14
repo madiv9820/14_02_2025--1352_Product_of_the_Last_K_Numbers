@@ -14,9 +14,9 @@
 **Batman:** "So, you want me to keep track of the last k numbers in this stream and then calculate their product on demand? Piece of cake." 🍰🔍
 
 **Riddler:** "Oh, Batman, always so serious! Here's the game plan:
-- `ProductOfNumbers()`: Start with an empty stream, no numbers in sight! 🕵️‍♂️
-- `add(int num)`: Add the number to the stream, and remember it! 💭📈
-- `getProduct(int k)`: When you need it, calculate the product of the last k numbers! But be careful... they're all connected, like a web of numbers! 😈✨
+- ***`ProductOfNumbers()`***: Start with an empty stream, no numbers in sight! 🕵️‍♂️
+- ***`add(int num)`***: Add the number to the stream, and remember it! 💭📈
+- ***`getProduct(int k)`***: When you need it, calculate the product of the last k numbers! But be careful... they're all connected, like a web of numbers! 😈✨
 
 Can you keep up with my riddles, Batman? The product’s waiting! 🦇🤐"
 
