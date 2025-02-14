@@ -242,7 +242,7 @@ public:
             {"large_k_matching_stream_length", {{"ProductOfNumbers","add","add","add","add","getProduct"},
                                                {{},{2},{2},{2},{2},{4}},
                                                {-1,-1,-1,-1,-1,16}}},
-            {"continuous_zeros_resetting_product", {{"ProductOfNumbers","add","add","add","getProduct"},
+            {"continuous_zeros_resetting_product", {{"ProductOfNumbers","add","add","add","add","getProduct"},
                                                    {{},{0},{0},{0},{5},{1}},
                                                    {-1,-1,-1,-1,-1,5}}},
             {"single_element_with_multiple_getProduct_calls", {{"ProductOfNumbers","add","getProduct","getProduct"},
