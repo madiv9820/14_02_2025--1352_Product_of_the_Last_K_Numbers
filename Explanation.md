@@ -168,9 +168,9 @@
         ```
 <hr>
 
-### 📂 GitHub Repository 🚀🦑
-Want to see the full masterpiece in action? 🎨 Check out my GitHub repository here:
-👉 ***[Product of the Last K Numbers](https://github.com/madiv9820/14_02_2025--1352_Product_of_the_Last_K_Numbers/tree/main)*** 🌟
+- ### 📂 GitHub Repository 🚀🦑
+    Want to see the full masterpiece in action? 🎨 Check out my GitHub repository here:
+    👉 ***[Product of the Last K Numbers](https://github.com/madiv9820/14_02_2025--1352_Product_of_the_Last_K_Numbers/tree/main)*** 🌟
 
-Fork it, star it, or just vibe with it. ⭐🚀 Code’s waiting for you—don’t leave it hanging! 😎💻
+    Fork it, star it, or just vibe with it. ⭐🚀 Code’s waiting for you—don’t leave it hanging! 😎💻
 <hr>
