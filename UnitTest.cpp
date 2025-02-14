@@ -12,7 +12,7 @@ struct testcase {
 class UnitTest {
 private:
     unordered_map<string, testcase> testcases;
-    ProductOfNumbers solution;
+    ProductOfNumbers product;
     
     void test_case_default_example() {
         vector<string>& function_inputs = testcases["default_example"].function_inputs;
@@ -23,8 +23,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") solution.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = solution.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") product.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -41,8 +41,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") solution.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = solution.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") product.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -59,8 +59,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") solution.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = solution.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") product.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -77,8 +77,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") solution.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = solution.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") product.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -95,8 +95,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") solution.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = solution.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") product.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -113,8 +113,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") solution.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = solution.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") product.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -131,8 +131,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") solution.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = solution.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") product.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -149,8 +149,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") solution.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = solution.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") product.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -167,8 +167,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") solution.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = solution.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") product.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -185,8 +185,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") solution.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = solution.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") product.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -203,8 +203,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") solution.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = solution.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") product.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
