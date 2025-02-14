@@ -15,8 +15,7 @@ class ProductOfNumbers:
         
         kProduct, n = 1, len(self.__numbers)
         # 💪 Rolling up our sleeves and multiplying from the back
-        for i in range(n-1, n-k-1, -1):
-            kProduct *= self.__numbers[i]
+        for i in range(n-1, n-k-1, -1): kProduct *= self.__numbers[i]
         
         # 🎉 Return the grand total!
         return kProduct

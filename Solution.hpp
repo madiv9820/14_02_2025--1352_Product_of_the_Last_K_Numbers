@@ -4,7 +4,6 @@ using namespace std;
 class ProductOfNumbers {
 private:
     vector<int> numbers;  // 🗃️ Our secret stash of numbers!
-
 public:
     ProductOfNumbers() {
         // 🛎️ Constructor opens the shop! But nothing inside... yet.
