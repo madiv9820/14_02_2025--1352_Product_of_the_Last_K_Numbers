@@ -12,7 +12,7 @@ struct testcase {
 class UnitTest {
 private:
     unordered_map<string, testcase> testcases;
-    Solution solution;
+    ProductOfNumbers solution;
     
     void test_case_default_example() {
         vector<string>& function_inputs = testcases["default_example"].function_inputs;

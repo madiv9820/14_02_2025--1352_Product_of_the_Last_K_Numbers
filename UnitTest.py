@@ -1,10 +1,10 @@
-from Solution import Solution
+from Solution import ProductOfNumbers
 from timeout_decorator import timeout
 import unittest
 
 class UnitTest(unittest.TestCase):
     def setUp(self):
-        self.__solution = Solution()
+        self.__solution = ProductOfNumbers()
         self.__testcases = {
             "default_example": (["ProductOfNumbers","add","add","add","add","add","getProduct","getProduct","getProduct","add","getProduct"], 
                                 [[],[3],[0],[2],[5],[4],[2],[3],[4],[8],[2]],
