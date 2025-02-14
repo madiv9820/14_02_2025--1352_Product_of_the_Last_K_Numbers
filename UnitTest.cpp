@@ -12,7 +12,7 @@ struct testcase {
 class UnitTest {
 private:
     unordered_map<string, testcase> testcases;
-    ProductOfNumbers product;
+    ProductOfNumbers products;
     
     void test_case_default_example() {
         vector<string>& function_inputs = testcases["default_example"].function_inputs;
@@ -23,8 +23,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") product.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") products.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = products.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -41,8 +41,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") product.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") products.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = products.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -59,8 +59,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") product.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") products.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = products.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -77,8 +77,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") product.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") products.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = products.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -95,8 +95,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") product.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") products.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = products.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -113,8 +113,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") product.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") products.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = products.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -131,8 +131,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") product.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") products.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = products.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -149,8 +149,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") product.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") products.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = products.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -167,8 +167,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") product.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") products.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = products.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -176,23 +176,23 @@ private:
 
         cout << "test_case_large_k_matching_stream_length: " << ((passed) ? "passed":"failed") << endl;
     }
-    void test_case_continuous_zeros_resetting_product() {
-        vector<string>& function_inputs = testcases["continuous_zeros_resetting_product"].function_inputs;
-        vector<vector<int>>& inputs = testcases["continuous_zeros_resetting_product"].inputs;
-        vector<int>& expected = testcases["continuous_zeros_resetting_product"].expected;
+    void test_case_continuous_zeros_resetting_products() {
+        vector<string>& function_inputs = testcases["continuous_zeros_resetting_products"].function_inputs;
+        vector<vector<int>>& inputs = testcases["continuous_zeros_resetting_products"].inputs;
+        vector<int>& expected = testcases["continuous_zeros_resetting_products"].expected;
         
         int n = expected.size();
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") product.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") products.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = products.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
         for(int i = 0; i < n; ++i) if(expected[i] != result[i]) { passed = false; break; }
 
-        cout << "test_case_continuous_zeros_resetting_product: " << ((passed) ? "passed":"failed") << endl;
+        cout << "test_case_continuous_zeros_resetting_products: " << ((passed) ? "passed":"failed") << endl;
     }
     void test_case_single_element_with_multiple_getProduct_calls() {
         vector<string>& function_inputs = testcases["single_element_with_multiple_getProduct_calls"].function_inputs;
@@ -203,8 +203,8 @@ private:
         vector<int> result(n, -1);
         
         for(int i = 0; i < n; ++i) {
-            if(function_inputs[i] == "add") product.add(inputs[i][0]);
-            else if(function_inputs[i] == "getProduct") result[i] = product.getProduct(inputs[i][0]);
+            if(function_inputs[i] == "add") products.add(inputs[i][0]);
+            else if(function_inputs[i] == "getProduct") result[i] = products.getProduct(inputs[i][0]);
         }
 
         bool passed = true;
@@ -242,7 +242,7 @@ public:
             {"large_k_matching_stream_length", {{"ProductOfNumbers","add","add","add","add","getProduct"},
                                                {{},{2},{2},{2},{2},{4}},
                                                {-1,-1,-1,-1,-1,16}}},
-            {"continuous_zeros_resetting_product", {{"ProductOfNumbers","add","add","add","add","getProduct"},
+            {"continuous_zeros_resetting_products", {{"ProductOfNumbers","add","add","add","add","getProduct"},
                                                    {{},{0},{0},{0},{5},{1}},
                                                    {-1,-1,-1,-1,-1,5}}},
             {"single_element_with_multiple_getProduct_calls", {{"ProductOfNumbers","add","getProduct","getProduct"},
@@ -260,7 +260,7 @@ public:
         test_case_all_same_numbers();
         test_case_large_input_with_small_k();
         test_case_large_k_matching_stream_length();
-        test_case_continuous_zeros_resetting_product();
+        test_case_continuous_zeros_resetting_products();
         test_case_single_element_with_multiple_getProduct_calls();
     }
 };

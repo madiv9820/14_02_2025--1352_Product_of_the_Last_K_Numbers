@@ -4,7 +4,7 @@ import unittest
 
 class UnitTest(unittest.TestCase):
     def setUp(self):
-        self.__product = ProductOfNumbers()
+        self.__products = ProductOfNumbers()
         self.__testcases = {
             "default_example": (["ProductOfNumbers","add","add","add","add","add","getProduct","getProduct","getProduct","add","getProduct"], 
                                 [[],[3],[0],[2],[5],[4],[2],[3],[4],[8],[2]],
@@ -33,7 +33,7 @@ class UnitTest(unittest.TestCase):
             "large_k_matching_stream_length": (["ProductOfNumbers","add","add","add","add","getProduct"],
                                                [[],[2],[2],[2],[2],[4]],
                                                [None,None,None,None,None,16]),
-            "continuous_zeros_resetting_product": (["ProductOfNumbers","add","add","add","add","getProduct"],
+            "continuous_zeros_resetting_products": (["ProductOfNumbers","add","add","add","add","getProduct"],
                                                    [[],[0],[0],[0],[5],[1]],
                                                    [None,None,None,None,None,5]),
             "single_element_with_multiple_getProduct_calls": (["ProductOfNumbers","add","getProduct","getProduct"],
@@ -50,8 +50,8 @@ class UnitTest(unittest.TestCase):
         output = [None] * n
         
         for i in range(n):
-            if function_inputs[i] == "add": self.__product.add(inputs[i][0])
-            elif function_inputs[i] == "getProduct": output[i] = self.__product.getProduct(inputs[i][0])
+            if function_inputs[i] == "add": self.__products.add(inputs[i][0])
+            elif function_inputs[i] == "getProduct": output[i] = self.__products.getProduct(inputs[i][0])
 
         self.assertEqual(output, expected)
     @timeout(0.5)
@@ -62,8 +62,8 @@ class UnitTest(unittest.TestCase):
         output = [None] * n
         
         for i in range(n):
-            if function_inputs[i] == "add": self.__product.add(inputs[i][0])
-            elif function_inputs[i] == "getProduct": output[i] = self.__product.getProduct(inputs[i][0])
+            if function_inputs[i] == "add": self.__products.add(inputs[i][0])
+            elif function_inputs[i] == "getProduct": output[i] = self.__products.getProduct(inputs[i][0])
 
         self.assertEqual(output, expected)
     @timeout(0.5)
@@ -74,8 +74,8 @@ class UnitTest(unittest.TestCase):
         output = [None] * n
         
         for i in range(n):
-            if function_inputs[i] == "add": self.__product.add(inputs[i][0])
-            elif function_inputs[i] == "getProduct": output[i] = self.__product.getProduct(inputs[i][0])
+            if function_inputs[i] == "add": self.__products.add(inputs[i][0])
+            elif function_inputs[i] == "getProduct": output[i] = self.__products.getProduct(inputs[i][0])
 
         self.assertEqual(output, expected)
     @timeout(0.5)
@@ -86,8 +86,8 @@ class UnitTest(unittest.TestCase):
         output = [None] * n
         
         for i in range(n):
-            if function_inputs[i] == "add": self.__product.add(inputs[i][0])
-            elif function_inputs[i] == "getProduct": output[i] = self.__product.getProduct(inputs[i][0])
+            if function_inputs[i] == "add": self.__products.add(inputs[i][0])
+            elif function_inputs[i] == "getProduct": output[i] = self.__products.getProduct(inputs[i][0])
 
         self.assertEqual(output, expected)
     @timeout(0.5)
@@ -98,8 +98,8 @@ class UnitTest(unittest.TestCase):
         output = [None] * n
         
         for i in range(n):
-            if function_inputs[i] == "add": self.__product.add(inputs[i][0])
-            elif function_inputs[i] == "getProduct": output[i] = self.__product.getProduct(inputs[i][0])
+            if function_inputs[i] == "add": self.__products.add(inputs[i][0])
+            elif function_inputs[i] == "getProduct": output[i] = self.__products.getProduct(inputs[i][0])
 
         self.assertEqual(output, expected)
     @timeout(0.5)
@@ -110,8 +110,8 @@ class UnitTest(unittest.TestCase):
         output = [None] * n
         
         for i in range(n):
-            if function_inputs[i] == "add": self.__product.add(inputs[i][0])
-            elif function_inputs[i] == "getProduct": output[i] = self.__product.getProduct(inputs[i][0])
+            if function_inputs[i] == "add": self.__products.add(inputs[i][0])
+            elif function_inputs[i] == "getProduct": output[i] = self.__products.getProduct(inputs[i][0])
 
         self.assertEqual(output, expected)
     @timeout(0.5)
@@ -122,8 +122,8 @@ class UnitTest(unittest.TestCase):
         output = [None] * n
         
         for i in range(n):
-            if function_inputs[i] == "add": self.__product.add(inputs[i][0])
-            elif function_inputs[i] == "getProduct": output[i] = self.__product.getProduct(inputs[i][0])
+            if function_inputs[i] == "add": self.__products.add(inputs[i][0])
+            elif function_inputs[i] == "getProduct": output[i] = self.__products.getProduct(inputs[i][0])
 
         self.assertEqual(output, expected)
     @timeout(0.5)
@@ -134,8 +134,8 @@ class UnitTest(unittest.TestCase):
         output = [None] * n
         
         for i in range(n):
-            if function_inputs[i] == "add": self.__product.add(inputs[i][0])
-            elif function_inputs[i] == "getProduct": output[i] = self.__product.getProduct(inputs[i][0])
+            if function_inputs[i] == "add": self.__products.add(inputs[i][0])
+            elif function_inputs[i] == "getProduct": output[i] = self.__products.getProduct(inputs[i][0])
 
         self.assertEqual(output, expected)
     @timeout(0.5)
@@ -146,20 +146,20 @@ class UnitTest(unittest.TestCase):
         output = [None] * n
         
         for i in range(n):
-            if function_inputs[i] == "add": self.__product.add(inputs[i][0])
-            elif function_inputs[i] == "getProduct": output[i] = self.__product.getProduct(inputs[i][0])
+            if function_inputs[i] == "add": self.__products.add(inputs[i][0])
+            elif function_inputs[i] == "getProduct": output[i] = self.__products.getProduct(inputs[i][0])
 
         self.assertEqual(output, expected)
     @timeout(0.5)
-    def test_case_continuous_zeros_resetting_product(self):
-        function_inputs, inputs, expected = self.__testcases["continuous_zeros_resetting_product"]
+    def test_case_continuous_zeros_resetting_products(self):
+        function_inputs, inputs, expected = self.__testcases["continuous_zeros_resetting_products"]
         
         n = len(inputs)
         output = [None] * n
         
         for i in range(n):
-            if function_inputs[i] == "add": self.__product.add(inputs[i][0])
-            elif function_inputs[i] == "getProduct": output[i] = self.__product.getProduct(inputs[i][0])
+            if function_inputs[i] == "add": self.__products.add(inputs[i][0])
+            elif function_inputs[i] == "getProduct": output[i] = self.__products.getProduct(inputs[i][0])
 
         self.assertEqual(output, expected)
     @timeout(0.5)
@@ -170,8 +170,8 @@ class UnitTest(unittest.TestCase):
         output = [None] * n
         
         for i in range(n):
-            if function_inputs[i] == "add": self.__product.add(inputs[i][0])
-            elif function_inputs[i] == "getProduct": output[i] = self.__product.getProduct(inputs[i][0])
+            if function_inputs[i] == "add": self.__products.add(inputs[i][0])
+            elif function_inputs[i] == "getProduct": output[i] = self.__products.getProduct(inputs[i][0])
 
         self.assertEqual(output, expected)
 
