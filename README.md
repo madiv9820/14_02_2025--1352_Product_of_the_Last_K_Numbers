@@ -1,6 +1,6 @@
 # [1352. The Last K Numbers Walk Into a Bar... And Get Multiplied! 🍻🔢🎉](https://leetcode.com/problems/product-of-the-last-k-numbers)
 
-**Difficulty:** Medium  <br>
+**Difficulty:** Medium 🤔💡 <br>
 **Topics Covered**: Array 🧮🔢, Math ➗✖️📐, Design 🎨🖌️, Data Stream 🌊📊, Prefix Sum ➕🔢📈
 <hr>
 
