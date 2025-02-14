@@ -33,7 +33,7 @@ class UnitTest(unittest.TestCase):
             "large_k_matching_stream_length": (["ProductOfNumbers","add","add","add","add","getProduct"],
                                                [[],[2],[2],[2],[2],[4]],
                                                [None,None,None,None,None,16]),
-            "continuous_zeros_resetting_product": (["ProductOfNumbers","add","add","add","getProduct"],
+            "continuous_zeros_resetting_product": (["ProductOfNumbers","add","add","add","add","getProduct"],
                                                    [[],[0],[0],[0],[5],[1]],
                                                    [None,None,None,None,None,5]),
             "single_element_with_multiple_getProduct_calls": (["ProductOfNumbers","add","getProduct","getProduct"],
